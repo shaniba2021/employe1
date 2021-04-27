@@ -2,8 +2,8 @@
   <data>
     <!-- explicit list view definition -->
 
-    <record model="ir.ui.view" id="employe1.list">
-      <field name="name">employe1 list</field>
+    <record model="ir.ui.view" id="employee_list">
+      <field name="name">employee list</field>
       <field name="model">employe1.employee</field>
       <field name="arch" type="xml">
         <tree>
@@ -19,8 +19,8 @@
 
     <!-- actions opening views on models -->
 
-    <record model="ir.actions.act_window" id="employe1_action_window">
-      <field name="name">employe1 window</field>
+    <record model="ir.actions.act_window" id="employee_action_window">
+      <field name="name">employee window</field>
       <field name="res_model">employe1.employee</field>
       <field name="view_mode">tree,form</field>
     </record>
@@ -30,17 +30,17 @@
     
     <!-- Top menu item -->
 
-    <menuitem name="employe1" id="employe1_menu_root"/>
+    <menuitem name="employee" id="employee_menu_root"/>
 
     <!-- menu categories -->
 
-    <menuitem name="employee" id="employe1-menu_1" parent="employe1_menu_root"/>
-    <menuitem name="department" id="employe1_menu_2" parent="employe1-menu_root"/>
+    <menuitem name="employee" id="employee_menu_1" parent="employee_menu_root"/>
+    <menuitem name="department" id="employee_menu_2" parent="employee_menu_root"/>
 
     <!-- actions -->
 
-    <menuitem name="employee" id="employe1.menu_1_list" parent="employe1_menu_1"
-              action="employe1.action_window"/>
+    <menuitem name="employee" id="employee_menu_1_list" parent="employee_menu_1"
+              action="employee_action_window"/>
     
     
 

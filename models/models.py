@@ -15,13 +15,14 @@ class employe1(models.Model):
 
      
      
- class department(models.Model):
+class department(models.Model):
     _name = 'employe1.department'
     _description = 'employe1.employe'
      
-     name = fields.Char( 'name')
-    age= fields.Integer('age')
-    gender = fields.Selection([('g1', 'Male') , ('d2', 'Female')] , 'Gender')
-    phone = fields.Integer('Mobile Number')
-    dept= fields.Char('department')
+    name = fields.Char( 'name')
+    depno = fields.Integer('department number')
+    empname = fields.Char('employee name')
+    
+
+    
      
